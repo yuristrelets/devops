@@ -1,0 +1,15 @@
+version: "3"
+services:
+  nginx-server:
+    image: nginx:stable-alpine
+    container_name: lab1-nginx-server
+    ports:
+      - "3000:80"
+
+  health-check:
+    build: .
+    container_name: lab1-health-check
+    volumes:
+      - ./logs:/logs
+    depends_on:
+      - nginx-server
