@@ -4,10 +4,10 @@
 
 І перевіряємо папку `lab1/logs` (інтервал для cron 1 хвилина)
 
-або 
+або
 
 ```docker exec -it lab1-health-check cat /logs/nginx-server-log.log```
 
-Також можна дивитись логи запитів до nginx
+Перевірити, що nginx-server пінгується:
 
 ```docker logs lab1-nginx-server```
