@@ -2,7 +2,7 @@ data "aws_ami" "ubuntu-linux" {
   owners = ["amazon"]
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20220914"]
+    values = ["ami-0261755bbcb8c4a84"]
   }
   filter {
     name   = "virtualization-type"
